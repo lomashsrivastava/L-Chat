@@ -19,21 +19,14 @@ L-CHAT is a futuristic, neon-styled, real-time chat application built with moder
 ## ☁️ Deployment (Cloud)
 
 ### 1. Backend (Render)
-The backend uses Socket.io and **cannot** be hosted on Netlify. It must be hosted on a service like Render or Railway.
-1. Click the button below to deploy the backend.
-2. Render will auto-detect `render.yaml` and set it up.
-3. **Copy the HTTPS URL** given by Render (e.g. `https://l-chat-backend.onrender.com`).
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+**Live Status**: ✅ Deployed
+**URL**: [https://l-chat-backend.onrender.com](https://l-chat-backend.onrender.com)
 
 ### 2. Frontend (Netlify)
-[Live on Netlify](https://lchat-app.netlify.app)
-1. Deploy the frontend to Netlify.
-2. Go to **Site Settings > Environment Variables**.
-3. Add a new variable:
-   - Key: `VITE_SOCKET_URL`
-   - Value: `YOUR_RENDER_BACKEND_URL` (from step 1).
-4. Redeploy the site.
+**Live Status**: ✅ Deployed
+**URL**: [https://lchat12.netlify.app](https://lchat12.netlify.app)
+
+*(Note: The code is now pre-configured to connect to the live backend automatically!)*
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lomashsrivastava/L-Chat)
 

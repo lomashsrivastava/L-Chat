@@ -16,7 +16,7 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
     useEffect(() => {
         // Connect to the backend
-        const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:5000';
+        const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'https://l-chat-backend.onrender.com';
         const s = io(SOCKET_URL, {
             transports: ['websocket'],
             upgrade: false
