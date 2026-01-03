@@ -3,11 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://lomashsrivastava.github.io/L-Chat",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:gh": "tsc -b && vite build --base=/L-Chat/",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build:gh",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",

@@ -1,13 +1,20 @@
 # L-CHAT - Advanced Realtime Messaging Platform
 
 ## 🚀 Project Overview
-L-CHAT is a futuristic, neon-styled, real-time chat application built with modern web technologies.
-It supports instant messaging, rooms, and a high-performance websocket backend.
+**Developed by Lomash Srivastava**
+
+L-CHAT is a futuristic, neon-styled, real-time chat application built with modern web technologies. It supports instant messaging, rooms, and a high-performance websocket backend.
+
+**Repositories & Live Links:**
+- **GitHub Repo**: [https://github.com/lomashsrivastava/L-Chat](https://github.com/lomashsrivastava/L-Chat)
+- **Live Demo (GitHub Pages)**: [https://lomashsrivastava.github.io/L-Chat](https://lomashsrivastava.github.io/L-Chat)
+- **Live Demo (Netlify)**: [Link Coming Soon]
 
 ## 🛠 Tech Stack
 - **Frontend**: React (TypeScript), Vite, Tailwind CSS (Neon Theme), Framer Motion.
 - **Backend (Realtime)**: Node.js, Express, Socket.io.
 - **Architecture**: Microservices ready (Folders for Django Auth, FASTAPI AI).
+- **Deployment**: GitHub Pages, Netlify.
 
 ## 📂 Structure
 - `/frontend`: The React Client.
