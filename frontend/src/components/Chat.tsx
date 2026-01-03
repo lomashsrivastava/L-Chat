@@ -2,9 +2,9 @@ import React, { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Send, LogOut, Phone, Video, MoreVertical, Search, Copy,
-    UserPlus, Users, Settings, Plus, MessageSquare, Check, CheckCheck,
-    AlertCircle, Image as ImageIcon, FileText, Mic, Smile, X,
-    Bell, Shield, Moon, Share2, Paperclip, Camera
+    UserPlus, Users, Settings, MessageSquare, CheckCheck,
+    Mic, Smile, X,
+    Bell, Shield, Moon, Share2, Paperclip
 } from 'lucide-react';
 import { useSocket } from '../context/SocketContext';
 
@@ -24,6 +24,7 @@ interface Message {
     timestamp: string;
     type?: 'text' | 'image' | 'voice';
     status?: 'sent' | 'delivered' | 'read';
+    room?: string;
 }
 
 interface ChatProps {
@@ -305,6 +306,7 @@ const Chat: React.FC<ChatProps> = ({ currentUser, onLogout }) => {
     const displayedContacts = searchTerm ?
         allUsers.filter(u => u.username.toLowerCase().includes(searchTerm.toLowerCase()) || u.phone.includes(searchTerm)) : allUsers;
 
+    /*
     const getStatusText = () => {
         if (!selectedUser) return '';
         if (typingStatus[selectedUser.username]) {
@@ -332,6 +334,7 @@ const Chat: React.FC<ChatProps> = ({ currentUser, onLogout }) => {
         }
         return 'offline';
     };
+    */
 
     return (
         <div className="flex h-screen bg-black text-white overflow-hidden font-sans relative">
@@ -469,8 +472,8 @@ const Chat: React.FC<ChatProps> = ({ currentUser, onLogout }) => {
                         {/* Messages */}
                         <div className="flex-1 overflow-y-auto p-8 space-y-2 custom-scrollbar relative bg-[url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png')] bg-fixed">
                             <AnimatePresence initial={false}>
-                                {messages.map((msg, idx) => {
-                                    const isMe = msg.username === currentUser;
+                                {messages.map((msg) => {
+                                    const isMe = msg.sender === currentUser;
                                     return (
                                         <motion.div
                                             key={msg.id}

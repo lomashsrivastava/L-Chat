@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { User, MessageSquare, ArrowRight, Activity, Link as LinkIcon } from 'lucide-react';
+import { User, MessageSquare, ArrowRight, Activity } from 'lucide-react';
 import { useSocket } from '../context/SocketContext';
 import { useSearchParams } from 'react-router-dom';
 
