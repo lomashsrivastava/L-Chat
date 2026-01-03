@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { User, Lock, Phone, ArrowRight, Activity, MessageSquare } from 'lucide-react';
+import { User, Lock, Phone, ArrowRight, MessageSquare } from 'lucide-react';
 import { useSocket } from '../context/SocketContext';
 
 interface AuthProps {
