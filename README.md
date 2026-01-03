@@ -8,7 +8,7 @@ L-CHAT is a futuristic, neon-styled, real-time chat application built with moder
 **Repositories & Live Links:**
 - **GitHub Repo**: [https://github.com/lomashsrivastava/L-Chat](https://github.com/lomashsrivastava/L-Chat)
 - **Live Demo (GitHub Pages)**: [https://lomashsrivastava.github.io/L-Chat](https://lomashsrivastava.github.io/L-Chat)
-- **Live Demo (Netlify)**: [Link Coming Soon]
+- **Live Demo (Netlify)**: [https://lchat12.netlify.app/]
 
 ## 🛠 Tech Stack
 - **Frontend**: React (TypeScript), Vite, Tailwind CSS (Neon Theme), Framer Motion.
