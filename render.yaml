@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: l-chat-backend
+    env: node
+    plan: free
+    repo: https://github.com/lomashsrivastava/L-Chat
+    region: singapore
+    branch: main
+    rootDir: backend-realtime
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 10000

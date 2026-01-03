@@ -17,7 +17,7 @@ const io = new Server(server, {
     }
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // --- DATABASE (In-Memory for Demo) ---
 // users: { username: { password, phone, online, socketId, avatar, contacts: [] } }
