@@ -56,3 +56,5 @@ npm run dev
 - **Real-time Chat**: Instant delivery via Socket.io.
 - **Rooms/Channels**: Join specific rooms (e.g., #Zion, #Matrix).
 - **Responsive Design**: Mobile-friendly layout.
+
+Designed And Developed By Lomash Srivastava
